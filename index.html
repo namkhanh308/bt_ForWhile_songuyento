@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // function checkSNT(a){
+    //     for (let i = 2; i < a; i++) {
+    //         if (a % i == 0) {
+    //             return false
+    //         }
+    //     }
+    //     return true
+    // }
+    // let input = parseInt(prompt("Nhập vào n số nguyên tố đầu tiên"))
+    // let count = 0;
+    // for (let d = 2 ; d < 1000; d++){
+    //     if(checkSNT(d) == true){
+    //         console.log(d);
+    //         count++;
+    //     }
+    //     if(count == input){
+    //         break;
+    //     }
+    // }
+    let input = parseInt(prompt("Nhập vào n số nguyên tố đầu tiên"))
+    let count = 1;
+    let d = 2;
+    while (count <= input){
+        let check = true;
+        for (let i = 2; i < d; i++){
+            if(d % i == 0){
+                check = false;
+                break;
+            }
+        }
+        if(check == true){
+            console.log(d);
+            count++;
+        }
+        d++;
+    }
+
+    // let input = parseInt(prompt("Nhập vào n số nguyên tố đầu tiên"))
+    // let count = 0;
+    // for (let i = 2 ; i <= 100 ; i++){
+    //     let check = null;
+    //     for (let j = i; j >= 1;j--){
+    //         if(i%j == 0){
+    //             check = false;
+    //             break;
+    //         }
+    //         if(check == true){
+    //              console.log(i)
+    //              check = true;
+    //                }
+    //     {
+    //     // if(count == input){
+    //     //     break;
+    //     // }
+    // }
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
